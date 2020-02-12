@@ -19,7 +19,7 @@ var add = (req, res) => {
 var checkout = (req, res) => {
     var { user } = req.session;
     user.cart = [];
-    user.total = [];
+    user.total = 0;
 
     res.status(200).send(user);
 
